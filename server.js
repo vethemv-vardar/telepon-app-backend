@@ -39,4 +39,3 @@ const pool = require("./config/database");
 
   console.log("Geçici admin oluşturuldu");
 })();
-
