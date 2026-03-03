@@ -17,26 +17,6 @@ pool.connect((err) => {
   }
 });
 
-module.exports = pool;//database.js
-const { Pool } = require("pg");
-const bcrypt = require("bcrypt");
-
-const pool = new Pool({
-  host: "localhost",
-  user: "postgres",
-  password: "12345",
-  database: "surucu_kursu",
-  port: 5432,
-});
-
-pool.connect((err) => {
-  if (err) {
-    console.error("Database bağlantı hatası:", err);
-  } else {
-    console.log("PostgreSQL bağlandı ✅");
-  }
-});
-
 // Basit "schema ensure" (küçük projeler için pratik).
 // Tablo zaten varsa hata vermez.
 pool
